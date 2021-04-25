@@ -2,9 +2,14 @@
   --red: #e50914;
   --black: #000;
   --white: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 876px) {
   :root {
     font-size: 16px;
