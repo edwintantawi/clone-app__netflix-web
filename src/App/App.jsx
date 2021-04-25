@@ -12,6 +12,4 @@ const App = () => {
     </div>
   );
 };
-// some backdrop path
-// https://image.tmdb.org/t/p/w500/h4MNLYzr6Cr02iHv3Hpqb9lmTPv.jpg
 export default App;

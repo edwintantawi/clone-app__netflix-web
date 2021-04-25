@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import NotificationsIcon from '@material-ui/icons/Notifications';
@@ -8,8 +8,28 @@ import logo from '../../assets/logo.svg';
 import './index.css';
 import { Avatar } from '@material-ui/core';
 const Navbar = () => {
+  const navbar = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const pos = window.pageYOffset;
+
+      if (pos > 60) {
+        navbar.current.classList.add('nav--active');
+      } else {
+        navbar.current.classList.remove('nav--active');
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="nav">
+    <nav className="nav" ref={navbar}>
       <div className="nav__side">
         <img className="nav__logo" src={logo} alt="Netflix" />
         <ul className="nav__menu">

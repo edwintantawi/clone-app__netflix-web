@@ -1,10 +1,10 @@
 .hero {
-  background: var(--black)
-    url('https://image.tmdb.org/t/p/original/sd4xN5xi8tKRPrJOWwNiZEile7f.jpg')
-    no-repeat center top;
+  background-color: var(--black);
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 5%;
-  min-height: 650px;
+  padding: 160px 5% 140px;
+  min-height: 550px;
   display: flex;
   align-items: center;
   position: relative;
@@ -13,7 +13,6 @@
 .hero::after {
   content: '';
   position: absolute;
-  /* height: 300px; */
   top: 0;
   left: 0;
   right: 0;
@@ -39,6 +38,12 @@
   max-width: 500px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 1);
   margin: 6px 0 18px;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
 }
 button.hero__button {
   background-color: white;
@@ -60,6 +65,6 @@ button.hero__button:hover {
 
 @media screen and (min-width: 876px) {
   .hero {
-    padding: 150px 140px;
+    padding: 170px 5% 130px;
   }
 }
