@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav__side {
@@ -28,6 +32,7 @@
   list-style: none;
   padding: 12px;
   cursor: pointer;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 .nav__item--active {
   font-weight: 900;
