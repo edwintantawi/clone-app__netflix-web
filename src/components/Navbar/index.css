@@ -1,0 +1,46 @@
+/* bp 876 */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav__side {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 2.375rem;
+  margin-right: 32px;
+  padding-left: 0;
+}
+
+.nav__menu {
+  display: none;
+  padding: 0;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 12px;
+  cursor: pointer;
+}
+.nav__item--active {
+  font-weight: 900;
+}
+
+@media screen and (min-width: 876px) {
+  .nav {
+    padding: 1rem;
+  }
+  .nav__menu {
+    display: flex;
+  }
+  .nav__logo {
+    padding-left: 0.75rem;
+  }
+}
