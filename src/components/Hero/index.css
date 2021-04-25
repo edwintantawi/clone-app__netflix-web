@@ -1,0 +1,63 @@
+.hero {
+  background: var(--black)
+    url('https://image.tmdb.org/t/p/original/sd4xN5xi8tKRPrJOWwNiZEile7f.jpg')
+    no-repeat center top;
+  background-size: cover;
+  padding: 150px 5%;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  height: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    var(--black),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.hero__content {
+  z-index: 2;
+}
+.hero__title {
+  font-size: 4rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+}
+.hero__description {
+  font-size: 1.3rem;
+  max-width: 500px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+  margin: 6px 0 18px;
+}
+button.hero__button {
+  background-color: white;
+  margin-right: 16px;
+  padding: 12px 34px 12px 26px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  backdrop-filter: blur(10px);
+  margin-bottom: 10px;
+}
+
+button.hero__button .MuiSvgIcon-root {
+  margin-right: 6px;
+}
+
+button.hero__button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 876px) {
+  .hero {
+    padding: 150px 100px;
+  }
+}
