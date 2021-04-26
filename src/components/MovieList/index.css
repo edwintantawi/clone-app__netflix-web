@@ -1,5 +1,5 @@
 .movielist {
-  margin: 26px 28px 0;
+  margin: 1.625rem 1.75rem 0;
 }
 
 .movielist__title {
@@ -16,7 +16,6 @@
 }
 .movielist__trailerArea {
   position: relative;
-  padding: 16px;
 }
 .movielist__trailer {
   margin: 0 auto;
@@ -28,7 +27,7 @@
   position: relative;
   text-align: center;
   padding: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   background-color: rgb(24, 24, 24);
 }
 .movielist__toast--red {

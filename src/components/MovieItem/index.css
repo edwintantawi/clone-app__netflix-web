@@ -1,7 +1,7 @@
 .movieitem {
   cursor: pointer;
-  width: 300px;
-  max-height: 150px;
+  width: 18.75rem;
+  max-height: 9.375rem;
   object-fit: contain;
   margin: 5px;
   transition: 350ms;
@@ -12,6 +12,6 @@
 }
 
 .movieitem--large {
-  width: 500px;
-  max-height: 300px;
+  width: 31.25rem;
+  max-height: 18.75rem;
 }

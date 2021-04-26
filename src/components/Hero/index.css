@@ -3,8 +3,8 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px 5% 140px;
-  min-height: 550px;
+  padding: 10rem 5% 8.75rem;
+  min-height: 34.375rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -30,7 +30,7 @@
   z-index: 2;
 }
 .hero__title {
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 .hero__description {
